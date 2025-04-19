@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: etl_tsmx
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: etl_tsmx
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/schema_database_pgsql.sql:/docker-entrypoint-initdb.d/schema.sql
