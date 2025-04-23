@@ -13,7 +13,7 @@ Este projeto implementa um processo de ETL (Extração, Transformação e Carga)
 **1. Clone o repositório**
 
 ```
-git clone https://github.com/seu-usuario/ETL-xlsx-postgres.git
+git clone https://github.com/helouisedayane/ETL-xlsx-postgres.git
 cd ETL-xlsx-postgres
 ```
 
